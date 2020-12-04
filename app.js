@@ -4,7 +4,7 @@ function horizontalTabs() {
     let button_item = buttons.querySelectorAll(".button");
     let contents = document.getElementById("content_container");
     let content_item = contents.querySelectorAll(".block_content");
-    //add class to first item in each object
+    //add active class to first item in each object
     button_item[0].classList.add("active");
     content_item[0].classList.add("active");
 
@@ -17,11 +17,11 @@ function horizontalTabs() {
             e.target.classList.add("active");
         }
 
-        //for each button...
+        //for each .button ...
         for (let i = 0; i < button_item.length; i++) {
             let button = button_item[i];
 
-            //if the button is clicked, loop through the content
+            //and for each .block_content ...
             for (let x = 0; x < content_item.length; x++) {
                 let content = content_item[x];
                 let contentId = content_item[x].dataset.id;
