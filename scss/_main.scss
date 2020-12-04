@@ -1,0 +1,95 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 768px;
+    margin: 0 auto;
+    padding: 100px 24px 50px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #222;
+}
+
+.header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.block_header {
+    font-weight: 300;
+    margin: 0;
+}
+
+.block_tab-buttons {
+    display: flex;
+    flex-flow: row norap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    min-width: 150px;
+    border: 2px solid darkcyan;
+    background-color: darkcyan;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+        background-color: white;
+        color: darkcyan;
+    }
+}
+
+.block_content {
+    display: none;
+    margin: 20px 0;
+    padding: 24px;
+
+    &:nth-of-type(1) {
+        background-color: cyan;
+        color: black;
+    }
+
+    &:nth-of-type(2) {
+        background-color: magenta;
+        color: black;
+    }
+
+    &:nth-of-type(3) {
+        background-color: yellow;
+        color: black;
+    }
+
+    &:nth-of-type(4) {
+        background-color: black;
+        color: white;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    p {
+        margin: 0;
+    }
+}

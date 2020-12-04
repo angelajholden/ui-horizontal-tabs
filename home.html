@@ -4,8 +4,72 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Horizontal Tabs</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Horizontal Tabs</h1>
+        <header class="header">
+            <h1 class="block_header">Horizontal Tabs</h1>
+            <p>
+                Simple Horizontal Tabs UI Component made with HTML, CSS and
+                vanilla JavaScript.
+            </p>
+        </header>
+        <main class="main">
+            <section class="block_tabbed-content">
+                <div id="button_container" class="block_tab-buttons">
+                    <button type="button" data-id="one" class="button">
+                        One
+                    </button>
+                    <button type="button" data-id="two" class="button">
+                        Two
+                    </button>
+                    <button type="button" data-id="three" class="button">
+                        Three
+                    </button>
+                    <button type="button" data-id="four" class="button">
+                        Four
+                    </button>
+                </div>
+                <div id="content_container" class="block_tab-content">
+                    <article data-id="one" class="block_content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Nisi soluta fugiat minus temporibus ullam
+                            quasi magnam cupiditate. Repellat itaque molestias
+                            commodi, non cupiditate ullam ea, a suscipit nihil
+                            saepe laboriosam.
+                        </p>
+                    </article>
+                    <article data-id="two" class="block_content">
+                        <p>
+                            Voluptate, fugit cumque omnis tenetur explicabo nisi
+                            laboriosam reiciendis autem nesciunt voluptatibus
+                            iure eum perspiciatis ex provident, iusto illum
+                            harum vel. Saepe perspiciatis amet doloribus nobis,
+                            alias corporis natus tenetur?
+                        </p>
+                    </article>
+                    <article data-id="three" class="block_content">
+                        <p>
+                            Facere perspiciatis eligendi cum maiores nesciunt!
+                            Maxime rem eveniet aut ex est. Iure vero asperiores
+                            voluptatum hic, odio rerum id repellendus molestiae
+                            minima mollitia illo, nobis natus a nam
+                            necessitatibus.
+                        </p>
+                    </article>
+                    <article data-id="four" class="block_content">
+                        <p>
+                            Veniam repellat dicta ab iste, nesciunt doloremque
+                            vitae nam magnam ad illo ex iure quam debitis vero
+                            quas optio molestias aut laudantium similique
+                            architecto quasi dolores quisquam. Aperiam,
+                            consectetur iure.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <script src="app.js"></script>
     </body>
 </html>
